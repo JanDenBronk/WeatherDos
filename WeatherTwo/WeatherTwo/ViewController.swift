@@ -2,26 +2,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
+
     // MARK: - Subviews
-    
+
     let tableView: UITableView = {
         let tableView = UITableView.init(
             frame: .zero,
-            style: .plain
-        )
-        
+            style: .plain)
+
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+
         return tableView
     }()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
 
 
 
     // MARK: - Life Cycle
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
         setupView()
         addSubviews()
+        
+//        let urlString = "https://api.weather.yandex.ru/v2/forecast?lat=59.939099?lon=30.315877"
     }
 
 
@@ -29,9 +34,9 @@ class ViewController: UIViewController {
     // MARK: - Private
 
     private func setupView() {
-        self.view.backgroundColor = UIColor.systemBlue
+        view.backgroundColor = UIColor.systemBlue
     }
-    
+
     private func addSubviews() {
         view.addSubview(tableView)
     }
