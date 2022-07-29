@@ -9,19 +9,13 @@ import UIKit
 
 
 class WeatViewController: UIViewController {
-    
-    
-    
 
-    
-    
-    
+
+
     let emptyCity = Weat()
     var citiesArray = [Weat]()
     let nameCitiesArray = ["Якутск", "Москва", "Санкт-Петербург"]
-    
-    
-    
+
     let networkWeatherManager = NetworkWeather()
 
 
@@ -35,7 +29,7 @@ class WeatViewController: UIViewController {
         }()
 
 
-    
+
     // MARK: - Relations
     
 //    private var interactor: WeatBusinessLogic?
@@ -68,7 +62,7 @@ class WeatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+
         if citiesArray.isEmpty {
             citiesArray = Array(repeating: emptyCity, count: nameCitiesArray.count)
         }
@@ -76,7 +70,7 @@ class WeatViewController: UIViewController {
         addCities()
         configureTableVIew()
         addSubviews()
-//        setupView()
+//      setupView()
         tuneTableView()
         
         
@@ -134,8 +128,6 @@ class WeatViewController: UIViewController {
     private func tuneTableView() {
         
     }
-    
-
 }
 
 
@@ -150,25 +142,22 @@ class WeatViewController: UIViewController {
 
 extension WeatViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return citiesArray.count
-        
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell else {
             return UITableViewCell()
         }
+
         var weather = Weat()
         weather = citiesArray[indexPath.row]
         cell.configure(weather: weather)
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
