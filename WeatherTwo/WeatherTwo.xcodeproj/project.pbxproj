@@ -8,18 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		6D06F835288E9FEB00C98B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D06F834288E9FEB00C98B3B /* AppDelegate.swift */; };
-		6D06F839288E9FEB00C98B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D06F838288E9FEB00C98B3B /* ViewController.swift */; };
+		6D06F839288E9FEB00C98B3B /* WeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D06F838288E9FEB00C98B3B /* WeatViewController.swift */; };
 		6D06F83E288E9FEC00C98B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D06F83D288E9FEC00C98B3B /* Assets.xcassets */; };
 		6D06F841288E9FEC00C98B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D06F83F288E9FEC00C98B3B /* LaunchScreen.storyboard */; };
+		6DF3D3C228901D3D009D3DCB /* WeatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3C128901D3D009D3DCB /* WeatPresenter.swift */; };
+		6DF3D3C428901EE4009D3DCB /* WeatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3C328901EE4009D3DCB /* WeatInteractor.swift */; };
+		6DF3D3C828902F48009D3DCB /* WeatTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3C728902F48009D3DCB /* WeatTVCell.swift */; };
+		6DF3D3CD2890C09F009D3DCB /* WeatNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3CC2890C09F009D3DCB /* WeatNetwork.swift */; };
+		6DF3D3D02890C6D1009D3DCB /* WeatApiKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3CF2890C6D1009D3DCB /* WeatApiKey.swift */; };
+		6DF3D3DA28929CCA009D3DCB /* WeatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3D928929CCA009D3DCB /* WeatData.swift */; };
+		6DF3D3DC2892A10C009D3DCB /* Weat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3DB2892A10C009D3DCB /* Weat.swift */; };
+		6DF3D3DF2892B034009D3DCB /* WeatGetCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF3D3DE2892B034009D3DCB /* WeatGetCities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6D06F831288E9FEB00C98B3B /* WeatherTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D06F834288E9FEB00C98B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D06F838288E9FEB00C98B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D06F838288E9FEB00C98B3B /* WeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatViewController.swift; sourceTree = "<group>"; };
 		6D06F83D288E9FEC00C98B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D06F840288E9FEC00C98B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D06F842288E9FEC00C98B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF3D3C128901D3D009D3DCB /* WeatPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatPresenter.swift; sourceTree = "<group>"; };
+		6DF3D3C328901EE4009D3DCB /* WeatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatInteractor.swift; sourceTree = "<group>"; };
+		6DF3D3C728902F48009D3DCB /* WeatTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatTVCell.swift; sourceTree = "<group>"; };
+		6DF3D3CC2890C09F009D3DCB /* WeatNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatNetwork.swift; sourceTree = "<group>"; };
+		6DF3D3CF2890C6D1009D3DCB /* WeatApiKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatApiKey.swift; sourceTree = "<group>"; };
+		6DF3D3D928929CCA009D3DCB /* WeatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatData.swift; sourceTree = "<group>"; };
+		6DF3D3DB2892A10C009D3DCB /* Weat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weat.swift; sourceTree = "<group>"; };
+		6DF3D3DE2892B034009D3DCB /* WeatGetCities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatGetCities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +68,77 @@
 		6D06F833288E9FEB00C98B3B /* WeatherTwo */ = {
 			isa = PBXGroup;
 			children = (
-				6D06F834288E9FEB00C98B3B /* AppDelegate.swift */,
-				6D06F838288E9FEB00C98B3B /* ViewController.swift */,
+				6DF3D3CB2890C072009D3DCB /* WeatNetwork */,
+				6DF3D3BF28901BB8009D3DCB /* Screens */,
+				6DF3D3CE2890C695009D3DCB /* WeatSupport */,
 				6D06F83D288E9FEC00C98B3B /* Assets.xcassets */,
 				6D06F83F288E9FEC00C98B3B /* LaunchScreen.storyboard */,
 				6D06F842288E9FEC00C98B3B /* Info.plist */,
 			);
 			path = WeatherTwo;
+			sourceTree = "<group>";
+		};
+		6DF3D3BF28901BB8009D3DCB /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3C028901BCB009D3DCB /* Weat */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6DF3D3C028901BCB009D3DCB /* Weat */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3C528902EE1009D3DCB /* Cells */,
+				6D06F838288E9FEB00C98B3B /* WeatViewController.swift */,
+				6DF3D3C328901EE4009D3DCB /* WeatInteractor.swift */,
+				6DF3D3C128901D3D009D3DCB /* WeatPresenter.swift */,
+			);
+			path = Weat;
+			sourceTree = "<group>";
+		};
+		6DF3D3C528902EE1009D3DCB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3C628902EEB009D3DCB /* WeatCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6DF3D3C628902EEB009D3DCB /* WeatCell */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3C728902F48009D3DCB /* WeatTVCell.swift */,
+			);
+			path = WeatCell;
+			sourceTree = "<group>";
+		};
+		6DF3D3CB2890C072009D3DCB /* WeatNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3DD2892AFF9009D3DCB /* WeatData */,
+				6DF3D3CC2890C09F009D3DCB /* WeatNetwork.swift */,
+			);
+			path = WeatNetwork;
+			sourceTree = "<group>";
+		};
+		6DF3D3CE2890C695009D3DCB /* WeatSupport */ = {
+			isa = PBXGroup;
+			children = (
+				6D06F834288E9FEB00C98B3B /* AppDelegate.swift */,
+				6DF3D3CF2890C6D1009D3DCB /* WeatApiKey.swift */,
+			);
+			path = WeatSupport;
+			sourceTree = "<group>";
+		};
+		6DF3D3DD2892AFF9009D3DCB /* WeatData */ = {
+			isa = PBXGroup;
+			children = (
+				6DF3D3DE2892B034009D3DCB /* WeatGetCities.swift */,
+				6DF3D3D928929CCA009D3DCB /* WeatData.swift */,
+				6DF3D3DB2892A10C009D3DCB /* Weat.swift */,
+			);
+			path = WeatData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,8 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D06F839288E9FEB00C98B3B /* ViewController.swift in Sources */,
+				6D06F839288E9FEB00C98B3B /* WeatViewController.swift in Sources */,
+				6DF3D3C228901D3D009D3DCB /* WeatPresenter.swift in Sources */,
 				6D06F835288E9FEB00C98B3B /* AppDelegate.swift in Sources */,
+				6DF3D3C428901EE4009D3DCB /* WeatInteractor.swift in Sources */,
+				6DF3D3DA28929CCA009D3DCB /* WeatData.swift in Sources */,
+				6DF3D3DC2892A10C009D3DCB /* Weat.swift in Sources */,
+				6DF3D3DF2892B034009D3DCB /* WeatGetCities.swift in Sources */,
+				6DF3D3C828902F48009D3DCB /* WeatTVCell.swift in Sources */,
+				6DF3D3CD2890C09F009D3DCB /* WeatNetwork.swift in Sources */,
+				6DF3D3D02890C6D1009D3DCB /* WeatApiKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A8DYVY65N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherTwo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -297,6 +386,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3A8DYVY65N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherTwo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

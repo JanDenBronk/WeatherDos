@@ -7,7 +7,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let navigationController = UINavigationController.init(rootViewController: ViewController())
+        let navigationController = UINavigationController.init(rootViewController: WeatViewController())
 
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
