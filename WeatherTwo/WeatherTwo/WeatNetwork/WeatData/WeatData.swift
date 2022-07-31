@@ -19,7 +19,7 @@ struct Info: Decodable {
 
 struct Fact: Decodable {
     
-    let temp: Int
+    let temp: Double
     let condition: String
     let windSpeed: Double
     

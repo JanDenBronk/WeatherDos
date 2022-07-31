@@ -1,6 +1,8 @@
 import Foundation
 import CoreLocation
 
+
+
 let networkWeat = NetworkWeather()
 
 func getCityWeather(citiesArray: [String], completionHandler: @escaping (Int, Weat) -> Void) {

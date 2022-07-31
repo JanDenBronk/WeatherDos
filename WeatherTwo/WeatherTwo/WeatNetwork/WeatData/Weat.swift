@@ -5,15 +5,15 @@ import Foundation
 struct Weat {
     
     var name: String = "Название"
-    var temperature: Int = 0
+    var temperature: Double = 0.0
     var temperatureString: String {
-        return String(temperature)
+        return String(format: "%.0f", temperature)
     }
     
     var conditionCode: String = ""
     var url: String = ""
     var condition: String = ""
-    var windSpeed: Double = 0
+    var windSpeed: Double = 0.0
 
 
 
