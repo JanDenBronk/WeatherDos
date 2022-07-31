@@ -9,7 +9,7 @@ class TableViewCell: UITableViewCell {
     
         let myLabel: UILabel = {
             let myLabel = UILabel()
-            myLabel.font = .systemFont(ofSize: 20, weight: .bold)
+            myLabel.font = .systemFont(ofSize: 20)
             myLabel.text = ""
             return myLabel
         }()
